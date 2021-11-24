@@ -13,7 +13,7 @@ function rootReducer(state = initialState, action){
             }
 
         case 'FILTER_COLOR':
-            const arrayFilterColor = state.products.filter(e => e.color.toUpperCase() === action.payload.toUpperCase());
+            const arrayFilterColor = state.allProducts.filter(e => e.color.toUpperCase() === action.payload.toUpperCase());
             return {
                 ...state,
                 products: arrayFilterColor
@@ -24,7 +24,7 @@ function rootReducer(state = initialState, action){
             let arrayFilterSizes = [];
 
             if(action.payload.length === 1){
-                state.products.forEach(e => {
+                state.allProducts.forEach(e => {
                     if(e.size.length === 1){
                         if(e.size[0] === action.payload[0]) arrayFilterSizes.push(e);
                     } else {
@@ -35,7 +35,7 @@ function rootReducer(state = initialState, action){
                 });
             } else {
                 for(let i = 0; i < action.payload.length; i++){
-                    state.products.forEach(e => {
+                    state.allProducts.forEach(e => {
                         if(e.size.length === 1){
                             if(e.size[0] === action.payload[i]) arrayFilterSizes.push(e);
                         } else {
@@ -57,19 +57,19 @@ function rootReducer(state = initialState, action){
 
             switch(action.payload){
                 case 1:
-                    arrayFilterPrice = state.products.filter(e => e.price > 0 && e.price <= 50);
+                    arrayFilterPrice = state.allProducts.filter(e => e.price > 0 && e.price <= 50);
                     break;
                 case 2:
-                    arrayFilterPrice = state.products.filter(e => e.price > 50 && e.price <= 150);
+                    arrayFilterPrice = state.allProducts.filter(e => e.price > 50 && e.price <= 150);
                     break;
                 case 3:
-                    arrayFilterPrice = state.products.filter(e => e.price > 150 && e.price <= 300);
+                    arrayFilterPrice = state.allProducts.filter(e => e.price > 150 && e.price <= 300);
                     break;
                 case 4:
-                    arrayFilterPrice = state.products.filter(e => e.price > 300 && e.price <= 500);
+                    arrayFilterPrice = state.allProducts.filter(e => e.price > 300 && e.price <= 500);
                     break;
                 case 5:
-                    arrayFilterPrice = state.products.filter(e => e.price > 500 );
+                    arrayFilterPrice = state.allProducts.filter(e => e.price > 500 );
                     break;
                 default: return state;
             }
@@ -84,7 +84,7 @@ function rootReducer(state = initialState, action){
             let arraySort = [];
 
             if(action.payload === 'asc'){
-            arraySort = state.products.sort((a,b) => {
+            arraySort = state.allProducts.sort((a,b) => {
                 if(a.price > b.price){
                     return 1;
                 }
@@ -94,7 +94,7 @@ function rootReducer(state = initialState, action){
                 return 0;
             });
         } else if(action.payload === 'desc'){
-            arraySort = state.products.sort((a,b) => {
+            arraySort = state.allProducts.sort((a,b) => {
                 if(a.price < b.price){
                     return 1;
                 }
@@ -105,8 +105,8 @@ function rootReducer(state = initialState, action){
             });
         }
             return {
-                
-                allProducts:arraySort
+                ...state,
+                products:arraySort
             }
                 
           
