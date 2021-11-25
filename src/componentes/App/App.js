@@ -1,6 +1,6 @@
-import React, { useState,useEffect } from "react";
+import React, { useEffect } from "react";
 import { getProducts } from "../../Redux/actions";
-
+import './app.scss'
 import { useDispatch, useSelector} from 'react-redux'
 import Products from "../Products/Products";
 import Filters from "../Filters/Filters";
@@ -16,20 +16,16 @@ export default  function App(){
         dispatch(getProducts());
     },[dispatch])
 
-
-    console.log(state,'<<------sisa soy yo el products');
-
     return (
-        <div>
+        <div >
             <ShoppingCart />
-            <Filters />
-            <Order />
-    
-            {
-            state.products.length !== 0 ? 
-            <Products products={state.products}/>  :
-            <h1>Resultados no encontrados</h1>
-            }
+            <div className='app'>
+                <Filters />
+                <Order />
+                {state.products.length !== 0 ? 
+                <Products products={state.products}/>  :
+                <h1>Resultados no encontrados</h1>}
+            </div>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { filterByColor, filterByPrice, filterBySize } from "../../Redux/actions";
-
+import './filter.scss'
 export default function Filters(){
 
     const dispatch = useDispatch();
@@ -46,7 +46,8 @@ export default function Filters(){
 
     return (
         <div>
-                  <label>Colores</label>
+                  <label>COLORES</label>
+                  <br />
                       <div>
                         {colors.map((lang,i) =>(
                                 <span key = {i}>
@@ -61,11 +62,14 @@ export default function Filters(){
                                 </span>
                         ))}
                       </div>
-                  <label>Tamaños</label>
-                      <div>
+                  <br />
+                  <label>TAMAÑOS</label>
+                  <br />
+                      <div className='tamaños'>
                         {sizes.map((size,i) =>(
                                 <span key = {i}>
                                     <button 
+                                    className='button'
                                     name='bySize'
                                     value={size}
                                     onClick={handleClick}>
@@ -74,7 +78,9 @@ export default function Filters(){
                                 </span>
                         ))}
                       </div>
-                      <label>Franja de precios</label>
+                  <br />
+                   <label>FRANJA DE PRECIOS</label>
+                  <br />
                       <div>
                         {price.map((price,i) =>(
                                 <span key = {i}>

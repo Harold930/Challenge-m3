@@ -1,7 +1,7 @@
 import React  from 'react';
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../../Redux/actions';
-
+import './product.scss'
 export default function Product(props){
 
     const dispatch = useDispatch();
@@ -12,12 +12,14 @@ export default function Product(props){
     }
 
     return (
-        <div>
+        <div className='product'>
             <img src={props.product.image}  width="180" height="180" alt="Dont found" />
             <br />
-            <span>{props.product.name.toUpperCase()}</span>
-            <h4>{'R$'+props.product.price}</h4>
-            <button onClick={handleClick}>COMPRAR</button>
+            <div >
+                <span>{props.product.name.toUpperCase()}</span>
+                <h4>{'R$'+props.product.price}</h4>
+                <button onClick={handleClick}>COMPRAR</button>
+            </div>
         </div>
     )
     

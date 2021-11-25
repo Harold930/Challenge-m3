@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { sortByPrice } from "../../Redux/actions";
-
+import './order.scss'
 export default function Order(){
 
     const dispatch = useDispatch();
@@ -13,7 +13,7 @@ export default function Order(){
                
              
     return (
-        <div>
+        <div className='order'>
             {/* <br /> */}
             <select >
                 <option defaultValue >Ordenar por:</option>

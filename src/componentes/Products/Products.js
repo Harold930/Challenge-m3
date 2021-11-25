@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Product from '../Product/Product';
+import './products.scss'
 
 
 export default function Products(props){
@@ -12,16 +13,15 @@ export default function Products(props){
     }
     if(!charge){
         return (
-                <div>
+            <div className='grid'>
                     {props.products.slice(0,9).map((product,i) => (
                             <Product product={product} key = {i}/>
                     ))}
                     <button onClick={handleClick}>Cargar más</button>
-                </div>
-
+            </div>
         )} else {
         return(
-            <div>
+            <div className='grid'>
                 {props.products.map((product,i) => (
                         <Product product={product} key = {i}/>
                  ))}
