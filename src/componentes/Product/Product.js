@@ -1,6 +1,15 @@
 import React  from 'react';
+import { useDispatch } from 'react-redux';
+import { addProduct } from '../../Redux/actions';
 
 export default function Product(props){
+
+    const dispatch = useDispatch();
+    
+    function handleClick(e){
+        e.preventDefault();
+        dispatch(addProduct());
+    }
 
     return (
         <div>
@@ -8,7 +17,7 @@ export default function Product(props){
             <br />
             <span>{props.product.name.toUpperCase()}</span>
             <h4>{'R$'+props.product.price}</h4>
-            <button>COMPRAR</button>
+            <button onClick={handleClick}>COMPRAR</button>
         </div>
     )
     

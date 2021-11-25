@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { sortByPrice } from "../Redux/actions";
+import { sortByPrice } from "../../Redux/actions";
 
 export default function Order(){
 

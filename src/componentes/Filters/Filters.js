@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { filterByColor, filterByPrice, filterBySize, sortByPrice } from "../Redux/actions";
+import { filterByColor, filterByPrice, filterBySize } from "../../Redux/actions";
 
 export default function Filters(){
 
     const dispatch = useDispatch();
+    
     const sizes = ['M','G','40','44','GG','U','46','38','36','P'];
     const colors = 
     [
@@ -25,11 +26,10 @@ export default function Filters(){
 
     ]
 
-    function handleClick(e){
-        console.log(e.target.name,'----nombre del boton');
-        console.log(e.target.value,'----valor del boton');
 
-        e.preventDefault();
+    function handleClick(e){
+        console.log(e.target.checked,'----valor del cheuqeo');
+    
         switch(e.target.name){
             case 'byColor':{
                 dispatch(filterByColor(e.target.value));
@@ -40,7 +40,7 @@ export default function Filters(){
             case 'byPrice':{
                 dispatch(filterByPrice(parseInt(e.target.value)));
             }; break; 
-        default: return state;
+            default: return state;
         }
     }
 
@@ -51,10 +51,10 @@ export default function Filters(){
                         {colors.map((lang,i) =>(
                                 <span key = {i}>
                                     <input 
-                                    type="checkbox" 
+                                    type="radio" 
                                     name='byColor'
                                     value={lang.por}
-                                    onClick={handleClick}
+                                    onChange={handleClick}
                                     />
                                     <label>{lang.sp}</label>
                                     <br />
@@ -71,7 +71,6 @@ export default function Filters(){
                                     onClick={handleClick}>
                                     {size}
                                     </button>
-                                    {/* <br /> */}
                                 </span>
                         ))}
                       </div>
@@ -80,10 +79,10 @@ export default function Filters(){
                         {price.map((price,i) =>(
                                 <span key = {i}>
                                     <input 
-                                    type="checkbox" 
+                                    type="radio" 
                                     name='byPrice'
                                     value={price.opc}
-                                    onClick={handleClick}
+                                    onChange={handleClick}
                                     />
                                     <label>{price.msg}</label>
                                     <br />

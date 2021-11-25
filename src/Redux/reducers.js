@@ -1,6 +1,7 @@
 const initialState = {
     products: [],
-    allProducts: []
+    allProducts: [],
+    count: 0
 }
 
 function rootReducer(state = initialState, action){
@@ -108,9 +109,12 @@ function rootReducer(state = initialState, action){
                 ...state,
                 products:arraySort
             }
-                
-          
-
+        
+        case 'ADD_PRODUCT':
+            return  {
+                ...state,
+                count:state.count + action.payload}
+            
         default: return state;
     }
 }

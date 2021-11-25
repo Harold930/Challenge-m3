@@ -49,3 +49,12 @@ export function sortByPrice(opc){
         });
     }
 }
+
+export function addProduct(){
+    return  function(dispatch){
+        return dispatch({
+            type: 'ADD_PRODUCT',
+            payload: 1
+        });
+    }
+}
