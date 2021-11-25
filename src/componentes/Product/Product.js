@@ -13,9 +13,9 @@ export default function Product(props){
 
     return (
         <div className='product'>
-            <img src={props.product.image}  width="195" height="293" alt="Dont found" />
+            <img src={props.product.image}  alt="Dont found" />
             <br />
-                <span>{props.product.name.toUpperCase()}</span>
+                <span className='fontName'>{props.product.name.toUpperCase()}</span>
                 <h4>{'R$'+props.product.price}</h4>
                 <button className='buttonBuy' onClick={handleClick}>COMPRAR</button>
         </div>

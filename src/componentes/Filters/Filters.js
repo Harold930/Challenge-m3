@@ -45,7 +45,7 @@ export default function Filters(){
     }
 
     return (
-        <div>
+        <div className='filter'>
                 <span className='blusas'>Blusas</span>
                 <br />
                   <span>COLORES</span>
