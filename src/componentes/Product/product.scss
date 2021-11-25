@@ -1,6 +1,18 @@
+$negro: #000000;
+$azul:#00C0EE;
+
+
 .product{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+     align-items: center
 }
+ .buttonBuy{
+    background-color: $negro;
+    width: 195px;
+    height: 33px; 
+    color: white;
+ }
+ .checkbox:focus{
+    background-color: $azul;
+ }

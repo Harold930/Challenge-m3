@@ -1,12 +1,28 @@
+$azul:#00C0EE;
+
 .tamaños{
     display: flex;
     flex-wrap: wrap;
     width: 100px;
 }
-filter{
+.filter{
     width: 250px;
 }
 .button{
     width: 25px;
     height: 25px;
+}
+.button:hover{
+    background-color: $azul;
+}
+.button:focus{
+    background-color: $azul;
+}
+label{
+    font-size: small;
+}
+.blusas{
+    display: block;
+    font-size: xx-large;
+    margin-bottom: 50px;
 }

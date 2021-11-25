@@ -14,7 +14,6 @@ export default function Order(){
              
     return (
         <div className='order'>
-            {/* <br /> */}
             <select >
                 <option defaultValue >Ordenar por:</option>
                 <option onClick={handleClick} value="asc" >Menor precio</option>

@@ -46,7 +46,9 @@ export default function Filters(){
 
     return (
         <div>
-                  <label>COLORES</label>
+                <span className='blusas'>Blusas</span>
+                <br />
+                  <span>COLORES</span>
                   <br />
                       <div>
                         {colors.map((lang,i) =>(
@@ -63,7 +65,7 @@ export default function Filters(){
                         ))}
                       </div>
                   <br />
-                  <label>TAMAÑOS</label>
+                  <span>TAMAÑOS</span>
                   <br />
                       <div className='tamaños'>
                         {sizes.map((size,i) =>(
@@ -79,7 +81,7 @@ export default function Filters(){
                         ))}
                       </div>
                   <br />
-                   <label>FRANJA DE PRECIOS</label>
+                   <span>FRANJA DE PRECIOS</span>
                   <br />
                       <div>
                         {price.map((price,i) =>(

@@ -17,7 +17,7 @@ export default function Products(props){
                     {props.products.slice(0,9).map((product,i) => (
                             <Product product={product} key = {i}/>
                     ))}
-                    <button onClick={handleClick}>Cargar más</button>
+                    <button className='cargarButton' onClick={handleClick}>CARGAR MÁS</button>
             </div>
         )} else {
         return(

@@ -1,7 +1,21 @@
+$azul:#00C0EE;
+
 .grid{
     display: grid;
     grid-template-columns: 320px 320px 320px  ;
     grid-template-rows: auto;
     grid-gap: 10px ;
     width: 976px;
+}
+.cargarButton{
+    background-color: $azul;
+    width: 175px;
+    height: 35px;
+    color:white;
+    position: absolute;
+    right: 596px;
+    left: 729px;
+    top: 1400px;
+    bottom: 68px;
+    margin-bottom: 20px;
 }
