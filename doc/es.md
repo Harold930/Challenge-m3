@@ -30,6 +30,12 @@ Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en H
 - React
 
 ----
+## Instrucciones para ejecutar el código:
+
+- Clonar el repositorio en tu ordenador.
+- Ejecutar en la linea de comandos 'npm install'
+- Luego, ejecutar 'npm run build' para generar el bundle correspondiente.
+- Por último ejecutar 'npm start' para levantar los servidores. 
 
 ## Cómo aplicar a la vacante
 
@@ -46,17 +52,7 @@ Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en H
 
 El layout se encontrá en [figma](https://www.figma.com/file/hPfcV6VClVfkHCtje9997Q/Desafio-m3?node-id=0%3A1) e también imagenes de el en "layout".
 
-### Dependencias
 
-El proyecto tiene un setup listo en que hay la necesidad de tener el nodejs instalado en la versión 14 o superior.
-
-Para hacer la instalación de dependencias sólo es necesario ejecutar el comando: `npm install`
-
-El comando utilizado para poner el server en start es: `npm start`
-
-Una vez que el comando es ejecutado el levantará 2 servidores, siendo ellos:
- - uno para acceder el front-end que corre en la puerta 3000. En el cual puede ser accedido por la url: http://localhost:3000
- - uno para el json-server que es responsable por exportar una api con la lista de productos que corre en la puerta 5000. Para acceder los produtos basta utilizar la url: http://localhost:5000/products
 
 ### Objetivo
 
@@ -76,5 +72,5 @@ El objetivo de este reto es avaliar sus conocimientos fundamentales de front-end
 
 - Javascript sin plugins y modular
 - Añadir un proceso en el gulp para hacer la otimización de imagenes
-
+##### correo electrónico harol20082008@hotmail.com
 ##### Dudas: [gabriel.buquer@m3ecommerce.com](mailto:gabriel.buquer@m3ecommerce.com?subject=Consulta%20Vacante%20DEV%20-%20M3)
