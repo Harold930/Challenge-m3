@@ -19,7 +19,7 @@ export default  function App(){
     return (
         <div >
             <ShoppingCart />
-            {/* <hr></hr> */}
+            <hr></hr>
             <div className='app'>
                 <Filters />
                 <Order />

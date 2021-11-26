@@ -13,10 +13,12 @@ export default function Products(props){
     }
     if(!charge){
         return (
+            <div>
             <div className='grid'>
                     {props.products.slice(0,9).map((product,i) => (
                             <Product product={product} key = {i}/>
                     ))}
+            </div>
                     <button className='cargarButton' onClick={handleClick}>CARGAR MÁS</button>
             </div>
         )} else {

@@ -1,7 +1,9 @@
 {
     "presets": [["@babel/preset-env",
         {"corejs": 3.6,
-        "useBuiltIns": "usage" 
-        }]
+         "useBuiltIns": "usage" 
+         }
+       ]
         ,"@babel/preset-react"]
-}
+} 
+ 

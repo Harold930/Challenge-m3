@@ -10,11 +10,10 @@ export default function Order(){
         e.preventDefault();
         dispatch(sortByPrice(e.target.value));
     }
-               
              
     return (
         <div className='order'>
-            <select >
+            <select>
                 <option defaultValue >Ordenar por:</option>
                 <option onClick={handleClick} value="asc" >Menor precio</option>
                 <option onClick={handleClick} value="desc" >Mayor precio</option>
