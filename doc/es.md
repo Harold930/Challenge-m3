@@ -30,12 +30,12 @@ Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en H
 - React
 
 ----
-## Instrucciones para ejecutar la prueba:
+## Instrucciones para ejecutar el código:
 
--Clonar el repositorio en tu ordenador.
--Ejecutar en la linea de comandos 'npm install'
--Luego, ejecutar 'npm run build' para generar el bundle correspondiente.
--Por último ejecutar 'npm start' para levantar los servidores. 
+- Clonar el repositorio en tu ordenador.
+- Ejecutar en la linea de comandos 'npm install'
+- Luego, ejecutar 'npm run build' para generar el bundle correspondiente.
+- Por último ejecutar 'npm start' para levantar los servidores. 
 
 ## Cómo aplicar a la vacante
 
