@@ -52,17 +52,7 @@ Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en H
 
 El layout se encontrá en [figma](https://www.figma.com/file/hPfcV6VClVfkHCtje9997Q/Desafio-m3?node-id=0%3A1) e también imagenes de el en "layout".
 
-### Dependencias
 
-El proyecto tiene un setup listo en que hay la necesidad de tener el nodejs instalado en la versión 14 o superior.
-
-Para hacer la instalación de dependencias sólo es necesario ejecutar el comando: `npm install`
-
-El comando utilizado para poner el server en start es: `npm start`
-
-Una vez que el comando es ejecutado el levantará 2 servidores, siendo ellos:
- - uno para acceder el front-end que corre en la puerta 3000. En el cual puede ser accedido por la url: http://localhost:3000
- - uno para el json-server que es responsable por exportar una api con la lista de productos que corre en la puerta 5000. Para acceder los produtos basta utilizar la url: http://localhost:5000/products
 
 ### Objetivo
 
