@@ -30,6 +30,12 @@ Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en H
 - React
 
 ----
+## Instrucciones para ejecutar la prueba:
+
+-Clonar el repositorio en tu ordenador.
+-Ejecutar en la linea de comandos 'npm install'
+-Luego, ejecutar 'npm run build' para generar el bundle correspondiente.
+-Por último ejecutar 'npm start' para levantar los servidores. 
 
 ## Cómo aplicar a la vacante
 
@@ -76,5 +82,5 @@ El objetivo de este reto es avaliar sus conocimientos fundamentales de front-end
 
 - Javascript sin plugins y modular
 - Añadir un proceso en el gulp para hacer la otimización de imagenes
-
+##### correo electrónico harol20082008@hotmail.com
 ##### Dudas: [gabriel.buquer@m3ecommerce.com](mailto:gabriel.buquer@m3ecommerce.com?subject=Consulta%20Vacante%20DEV%20-%20M3)
